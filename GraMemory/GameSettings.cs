@@ -18,6 +18,9 @@ namespace GraMemory
         public int Bok;
         public int AktualnePunkty;
 
+        public string PlikLogo = $@"{AppDomain.CurrentDomain.BaseDirectory}\obrazki\logo.jpg";
+        public string FolderObrazki = $@"{AppDomain.CurrentDomain.BaseDirectory}\obrazki\memory";
+
         public GameSettings()
         {
             UstawStartowe();

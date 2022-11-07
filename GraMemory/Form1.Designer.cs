@@ -34,7 +34,7 @@
             this.lblPunkty = new System.Windows.Forms.Label();
             this.lblPunktyWartosc = new System.Windows.Forms.Label();
             this.lblStartInfo = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.panelKart = new System.Windows.Forms.Panel();
             this.timerCzasGry = new System.Windows.Forms.Timer(this.components);
             this.timerCzasPodlgladu = new System.Windows.Forms.Timer(this.components);
             this.timerZakrywacz = new System.Windows.Forms.Timer(this.components);
@@ -90,12 +90,12 @@
             this.lblStartInfo.TabIndex = 4;
             this.lblStartInfo.Text = "Początek gry za 5.";
             // 
-            // panel1
+            // panelKart
             // 
-            this.panel1.Location = new System.Drawing.Point(16, 61);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(505, 27);
-            this.panel1.TabIndex = 5;
+            this.panelKart.Location = new System.Drawing.Point(16, 61);
+            this.panelKart.Name = "panelKart";
+            this.panelKart.Size = new System.Drawing.Size(505, 27);
+            this.panelKart.TabIndex = 5;
             // 
             // timerCzasGry
             // 
@@ -115,7 +115,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.PaleTurquoise;
             this.ClientSize = new System.Drawing.Size(533, 100);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panelKart);
             this.Controls.Add(this.lblStartInfo);
             this.Controls.Add(this.lblPunktyWartosc);
             this.Controls.Add(this.lblPunkty);
@@ -136,7 +136,7 @@
         private System.Windows.Forms.Label lblPunkty;
         private System.Windows.Forms.Label lblPunktyWartosc;
         private System.Windows.Forms.Label lblStartInfo;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel panelKart;
         private System.Windows.Forms.Timer timerCzasGry;
         private System.Windows.Forms.Timer timerCzasPodlgladu;
         private System.Windows.Forms.Timer timerZakrywacz;

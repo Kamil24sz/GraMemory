@@ -24,6 +24,7 @@ namespace GraMemory
             this.id = id;
             Tyl = Image.FromFile(tylPath);
             Obrazek = Image.FromFile(obrazekPath);
+            BackgroundImageLayout = ImageLayout.Stretch;
         }
 
         public void Zakryj()
