@@ -211,19 +211,23 @@ namespace GraMemory
             //aktualizacja czasu gry
             _settings.CzasGry--;
 
+            //przypisanie wartości timera do labela
             lblCzasWartosc.Text = _settings.CzasGry.ToString();
 
+            //gra kończy się w 2 przpadkach, jeśli czas dojedzie do 0 lub gracz odsłoni wszystkie karty
             if(_settings.CzasGry <= 0 || _settings.AktualnePunkty == _settings.MaxPunkty)
             {
                 //zatrzymujemy timery
                 timerCzasGry.Stop();
                 timerZakrywacz.Stop();
 
+                //przchwytujemy od użytkownika informację czy chce grać dalej
                 DialogResult yesno = MessageBox.Show($"Zdobyte punkty: {_settings.AktualnePunkty}. Czy chcesz zagrać ponownie?", 
                     "Koniec gry", MessageBoxButtons.YesNo);
 
                 if(yesno == DialogResult.Yes)
                 {
+                    //ustawiamy wszystkie wartości starotwe dla nowej rozgrywki
                     _settings.UstawStartowe();
                     GenerujKarty();
                     UstawKontrolki();
